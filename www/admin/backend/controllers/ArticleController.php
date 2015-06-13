@@ -36,28 +36,28 @@ class ArticleController extends Controller
             
             'image-upload' => [
                 'class' => 'vova07\imperavi\actions\UploadAction',
-                'url' => '/images/blog/', // Directory URL address, where files are stored.
-                'path' => '@webroot/../images/blog/' // Or absolute path to directory where files are stored.
+                'url' => '/uploads/images/article/', // Directory URL address, where files are stored.
+                'path' => '@webroot/../uploads/images/article/' // Or absolute path to directory where files are stored.
             ],
             
             'images-get' => [
                 'class' => 'vova07\imperavi\actions\GetAction',
-                'url' => 'http://bk/images/blog/', // Directory URL address, where files are stored.
-                'path' => '/var/www/bk/www/images/blog/', // Or absolute path to directory where files are stored.
+                'url' => 'http://bk/uploads/images/article/', // Directory URL address, where files are stored.
+                'path' => '/var/www/bk.loc/www/uploads/images/article/', // Or absolute path to directory where files are stored.
                 'type' => '\vova07\imperavi\actions\GetAction::TYPE_IMAGES',
             ],
 
             'files-get' => [
                 'class' => 'vova07\imperavi\actions\GetAction',
-                'url' => '/files/blog/', // Directory URL address, where files are stored.
-                'path' => '/var/www/bk/www/files/blog/', // Or absolute path to directory where files are stored.
+                'url' => '/uploads/files/article/', // Directory URL address, where files are stored.
+                'path' => '/var/www/bk.loc/www/uploads/files/article/', // Or absolute path to directory where files are stored.
                 'type' => '\vova07\imperavi\actions\GetAction::TYPE_FILES',//GetAction::TYPE_FILES,
             ],
 
             'file-upload' => [
                     'class' => 'vova07\imperavi\actions\UploadAction',
-                    'url' => '/files/blog/', // Directory URL address, where files are stored.
-                    'path' => '@webroot/../files/blog/', // Or absolute path to directory where files are stored.
+                    'url' => '/uploads/files/article/', // Directory URL address, where files are stored.
+                    'path' => '@webroot/../uploads/files/article/', // Or absolute path to directory where files are stored.
                     'uploadOnlyImage' => false,
                     'validatorOptions' => [
                         'maxSize' => 104857600
