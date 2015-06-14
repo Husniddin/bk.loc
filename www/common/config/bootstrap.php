@@ -1,5 +1,5 @@
 <?php
 Yii::setAlias('common', dirname(__DIR__));
-Yii::setAlias('frontend', dirname(dirname(__DIR__)) . '/frontend');
-Yii::setAlias('backend', dirname(dirname(__DIR__)) . '/admin/backend');
+Yii::setAlias('fprotected', dirname(dirname(__DIR__)) . '/fprotected');
+Yii::setAlias('bprotected', dirname(dirname(__DIR__)) . '/admin/bprotected');
 Yii::setAlias('console', dirname(dirname(__DIR__)) . '/console');
